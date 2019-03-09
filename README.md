@@ -36,7 +36,7 @@ stringslator.py search "Update s%"
 5 results.
 ```
 
-Notice here, we used `%` to match an arbitrary suffix. Use `_` for a single character wildcard. SQLite like matching rules apply. (see Notes below for language specific search).
+Notice here, we used `%` to match an arbitrary suffix. Use `_` for a single character wildcard. SQLite like matching rules apply. (see Notes below for language specific search). This view can get quite loaded, you can pipe the result into `less -S`.
 
 After we found a translation we want, lets export the translations for all available languages. For that, we use the first column id and the title-key value inside `('...')`.
 
